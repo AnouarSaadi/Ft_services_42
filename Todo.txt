@@ -1,0 +1,19 @@
+## Ft_services
+
+
+
+TODO:
+    - Read documentations about Docker, Kubernetes.
+    - Each service will have to run in a dedicated container.
+    - Containers will be build with Alpine linux.
+    - Dockerfile which will lunch by setup.sh.
+    - What's :
+        * The Load Balancer?
+        * The Kubernetes web dashboard?
+        * Wordpress?
+        * phpMyAdmin?
+        * nginx?
+        * FTPS?
+        * Grafana?
+        * Influxdb, MySQL?
+        * 
