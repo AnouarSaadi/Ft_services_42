@@ -17,3 +17,13 @@ TODO:
         * Grafana?
         * Influxdb, MySQL?
         * 
+
+What is a container ?
+
+Build container with three concepts :
+            1- linux Namespaces.
+            {
+                what can see.
+            }
+            2- changing the root.
+            3- Control Groups
