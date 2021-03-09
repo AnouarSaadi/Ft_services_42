@@ -23,7 +23,19 @@ What is a container ?
 Build container with three concepts :
             1- linux Namespaces.
             {
-                what can see.
+                - what you can see.
+                - Created with syscalls
             }
             2- changing the root.
             3- Control Groups
+            {
+                - what you can use.
+                - Filesystem inteface.
+            }
+
+
+signification: docker run -d -p 80:80 docker/getting-started
+            -d : run the container in detached mode (in the background)
+            -p : map port 80 of the host to port 80 in the container=
+            docker/getting-started : the image to use
+
