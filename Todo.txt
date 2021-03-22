@@ -1,7 +1,5 @@
 ## Ft_services
 
-
-
 TODO:
     - Read documentations about Docker, Kubernetes.
     - Each service will have to run in a dedicated container.
@@ -21,21 +19,31 @@ TODO:
 What is a container ?
 
 Build container with three concepts :
-            1- linux Namespaces.
+            1- Linux Namespaces.
             {
-                - what you can see.
+                - What you can see.
                 - Created with syscalls
             }
-            2- changing the root.
+            2- Changing the root.
             3- Control Groups
             {
-                - what you can use.
+                - What you can use.
                 - Filesystem inteface.
             }
 
-
 signification: docker run -d -p 80:80 docker/getting-started
             -d : run the container in detached mode (in the background)
-            -p : map port 80 of the host to port 80 in the container=
+            -p : map port 80 of the host to port 80 in the container
             docker/getting-started : the image to use
 
+
+
+API Application Programming Interface
+CLI Command line interfaces
+
+
+How to create a Docker-machine?
+	cmd1 : brew services start docker-machine 
+	cmd2 : docker-machine start
+	cmd3 : docker-machine ip // get ip of the vm
+	cmd4 : docker-machine env // export the vars of machine to env
