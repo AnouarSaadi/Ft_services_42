@@ -46,4 +46,4 @@ How to create a Docker-machine?
 	cmd1 : brew services start docker-machine 
 	cmd2 : docker-machine start
 	cmd3 : docker-machine ip // get ip of the vm
-	cmd4 : docker-machine env // export the vars of machine to env
+	cmd4 : docker-machine env // export the vars of machine to env show the commands line
