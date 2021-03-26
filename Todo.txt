@@ -14,7 +14,6 @@ TODO:
         * FTPS?
         * Grafana?
         * Influxdb, MySQL?
-        * 
 
 What is a container ?
 
@@ -47,3 +46,7 @@ How to create a Docker-machine?
 	cmd2 : docker-machine start
 	cmd3 : docker-machine ip // get ip of the vm
 	cmd4 : docker-machine env // export the vars of machine to env show the commands line
+	
+	
+	
+*Nginx: listen to 8080 -done
