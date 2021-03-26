@@ -9,9 +9,7 @@ FROM    alpine:latest
     RUN     apk add nginx
 
     # Installing OpenRC
-    RUN     apk add openrc
-    RUN     openrc
-    RUN     touch /run/openrc/softlevel
+    RUN     apk add --no-cache openrc
 
     # Creating new user and group for nginx
     RUN     adduser -D -g 'www' www
@@ -27,5 +25,7 @@ FROM    alpine:latest
 
     #
     RUN     mkdir /run/nginx
-    # 
-    # COPY    srcs/index.html /www
+	COPY	srcs/nginx-service.sh /
+	RUN		chmod +x /nginx-service.sh
+
+    ENTRYPOINT ["/bin/sh", "-c", "/nginx-service.sh"]
