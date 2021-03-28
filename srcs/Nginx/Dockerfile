@@ -26,6 +26,6 @@ FROM    alpine:latest
     #
     RUN     mkdir /run/nginx
 	COPY	srcs/nginx-service.sh /
-	RUN		chmod +x /nginx-service.sh
+	# RUN		chmod +x /nginx-service.sh
 
     ENTRYPOINT ["/bin/sh", "-c", "/nginx-service.sh"]
