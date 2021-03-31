@@ -5,3 +5,6 @@ docker build -t nginx:service srcs/Nginx
 
 # phpMyAdmin container
 docker build -t phpmyadmin:service srcs/phpMyAdmin
+
+# MySQL container
+docker build -t phpmyadmin:service srcs/MySQL
