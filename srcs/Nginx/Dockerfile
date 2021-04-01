@@ -21,11 +21,11 @@ FROM    alpine:latest
 # Configuration
     # Configuration Nginx to listen to port 80 and process .html and .htm
     RUN     rm /etc/nginx/nginx.conf
-    COPY    srcs/nginx.conf /etc/nginx/
+    COPY    nginx.conf /etc/nginx/
 
     #
     RUN     mkdir /run/nginx
-	COPY	srcs/nginx-service.sh /
-	# RUN		chmod +x /nginx-service.sh
+	COPY	nginx-service.sh /
+	RUN		chmod +x /nginx-service.sh
 
     ENTRYPOINT ["/bin/sh", "-c", "/nginx-service.sh"]
