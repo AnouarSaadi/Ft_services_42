@@ -28,4 +28,8 @@ FROM    alpine:latest
 	COPY	nginx-service.sh /
 	RUN		chmod +x /nginx-service.sh
 
+# Configuration ssl
+    RUN     apk add openssl
+    RUN     openssl req -x509 -nodes -days 365 -subj "/C=MA/ST=s/O=a Inc./CN=a" -addext "subjectAltName=DNS:a" -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+    
     ENTRYPOINT ["/bin/sh", "-c", "/nginx-service.sh"]
