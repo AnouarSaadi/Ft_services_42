@@ -8,3 +8,6 @@ docker build -t phpmyadmin:service srcs/phpMyAdmin
 
 # MySQL container 5050:5050
 docker build -t phpmyadmin:service srcs/MySQL
+
+# WordPress container  container 5050:5050
+docker build -t wordpress:service srcs/WordPress
