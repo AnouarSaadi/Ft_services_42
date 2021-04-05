@@ -22,7 +22,7 @@ FROM    alpine:latest
     # Configuration Nginx to listen to port 80 and process .html and .htm
     RUN     rm /etc/nginx/nginx.conf
     COPY    nginx.conf /etc/nginx/
-
+    COPY    index.html /www/html/
     #
     RUN     mkdir /run/nginx
 	COPY	nginx-service.sh /
