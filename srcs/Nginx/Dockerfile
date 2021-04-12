@@ -1,5 +1,5 @@
 # Base Image
-FROM    alpine:3.6
+FROM    alpine:3.13.0
 
 #Installation
     # Updating APK Packages
@@ -30,11 +30,8 @@ FROM    alpine:3.6
 
 # Configuration ssl
     RUN     apk add openssl
-    # RUN     openssl req -x509 -nodes -days 365 -subj "/C=MA/ST=s/O=a Inc./CN=a" -addext "subjectAltName=DNS:a" \
-    #         -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key \
-    #         -out /etc/ssl/certs/nginx-selfsigned.crt >/dev/null 2>&1
 
-    RUN     printf 'MA\nKHOURIBGA\nKHOURIBGA\n1337\n1337Ltd\nAnouar SAADI\nasaadi@student.1337.ma\n' | \
+    RUN     printf 'MA\nKHOURIBGA\nKHOURIBGA\n1337FIL\n1337Ltd\nAnouar SAADI\nasaadi@student.1337.ma\n' | \
             openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key \
             -out /etc/ssl/certs/nginx-selfsigned.crt
     
