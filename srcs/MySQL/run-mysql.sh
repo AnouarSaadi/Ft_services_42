@@ -2,5 +2,5 @@
 
 openrc
 touch /run/openrc/softlevel
-service mariadb start
+service mariadb restart
 sh

@@ -1,17 +1,18 @@
 #!/bin/bash
 
-# Nginx container 80:80 for http 443:443 for https
-docker build -t nginx:service srcs/Nginx
-# SSL Cert. done.
-# phpMyAdmin container 5000:5000
-docker build -t phpmyadmin:service srcs/phpMyAdmin
 
-# MySQL container 5050:5050
-docker build -t phpmyadmin:service srcs/MySQL
+# Images building
+docker build -t nginx srcs/Nginx
+docker build -t phpmyadmin srcs/phpMyAdmin
+docker build -t phpmyadmin srcs/MySQL
+docker build -t wordpress srcs/WordPress
 
-# WordPress container  container 5050:5050
-docker build -t wordpress:service srcs/WordPress
+# Create Deployemnts
 
+kubectl apply -f nginx/deployment.yaml
+kubectl apply -f phpMyadmin/deployment.yaml
 
+# Create Services
 
-
+kubectl apply -f nginx/service.yaml
+kubectl apply -f phpMyAdmin/service.yaml

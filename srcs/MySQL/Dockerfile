@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.12
 
 RUN     apk update
 RUN     apk add mysql mysql-client
@@ -17,3 +17,5 @@ RUN     service mariadb restart; \
         mysql -u root -e "CREATE USER 'wp'@'localhost' IDENTIFIED BY 'wppass';";\
         mysql -u root -e "GRANT ALL PRIVILEGES ON wordpress.* TO 'wp'@'localhost';";\
         mysql -u root -e "FLUSH PRIVILEGES";
+
+ENTRYPOINT [ "/bin/sh", "-c", "/run-mysql.sh"]
