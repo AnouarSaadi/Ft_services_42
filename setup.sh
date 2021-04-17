@@ -11,8 +11,10 @@ docker build -t wordpress srcs/WordPress
 
 kubectl apply -f nginx/deployment.yaml
 kubectl apply -f phpMyadmin/deployment.yaml
+kubectl apply -f MySQL/deployment.yaml
 
 # Create Services
 
 kubectl apply -f nginx/service.yaml
 kubectl apply -f phpMyAdmin/service.yaml
+kubectl apply -f MySQL/service.yaml
