@@ -18,4 +18,7 @@ RUN     service mariadb restart; \
         mysql -u root -e "GRANT ALL PRIVILEGES ON wordpress.* TO 'wp'@'localhost';";\
         mysql -u root -e "FLUSH PRIVILEGES";
 
+COPY    run-mysql.sh /
+RUN     chmod +x /run-mysql.sh
+
 ENTRYPOINT [ "/bin/sh", "-c", "/run-mysql.sh"]
