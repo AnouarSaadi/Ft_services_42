@@ -1,0 +1,1838 @@
+
+==> Audit <==
+|------------|---------------------|----------|--------|---------|-------------------------------|-------------------------------|
+|  Command   |        Args         | Profile  |  User  | Version |          Start Time           |           End Time            |
+|------------|---------------------|----------|--------|---------|-------------------------------|-------------------------------|
+| start      |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:41:49 +00 | Tue, 13 Apr 2021 10:43:25 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:43:55 +00 | Tue, 13 Apr 2021 10:43:56 +00 |
+| stop       |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:49:39 +00 | Tue, 13 Apr 2021 10:49:42 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:49:50 +00 | Tue, 13 Apr 2021 10:50:55 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:51:01 +00 | Tue, 13 Apr 2021 10:51:02 +00 |
+| delete     | --all               | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:54:27 +00 | Tue, 13 Apr 2021 10:54:28 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:55:06 +00 | Tue, 13 Apr 2021 10:56:24 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 10:56:30 +00 | Tue, 13 Apr 2021 10:56:31 +00 |
+| ip         |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 12:22:35 +00 | Tue, 13 Apr 2021 12:22:35 +00 |
+| service    | --url nginx-service | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 12:23:55 +00 | Tue, 13 Apr 2021 12:23:55 +00 |
+| service    | --url nginx-service | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 12:31:43 +00 | Tue, 13 Apr 2021 12:31:44 +00 |
+| service    | --url nginx-service | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 12:43:37 +00 | Tue, 13 Apr 2021 12:43:38 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 14:31:36 +00 | Tue, 13 Apr 2021 14:32:46 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 14:33:30 +00 | Tue, 13 Apr 2021 14:33:30 +00 |
+| ip         |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 14:55:44 +00 | Tue, 13 Apr 2021 14:55:44 +00 |
+| service    | --url nginx-svc     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 15:30:29 +00 | Tue, 13 Apr 2021 15:30:30 +00 |
+| ip         |                     | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 15:46:22 +00 | Tue, 13 Apr 2021 15:46:22 +00 |
+| service    | web --url           | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 15:57:01 +00 | Tue, 13 Apr 2021 15:57:02 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:04:19 +00 | Tue, 13 Apr 2021 16:04:19 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:05:14 +00 | Tue, 13 Apr 2021 16:05:14 +00 |
+| service    | nginx --url         | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:07:32 +00 | Tue, 13 Apr 2021 16:07:32 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:16:36 +00 | Tue, 13 Apr 2021 16:16:36 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:18:08 +00 | Tue, 13 Apr 2021 16:18:08 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:18:51 +00 | Tue, 13 Apr 2021 16:18:51 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:21:06 +00 | Tue, 13 Apr 2021 16:21:07 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:23:12 +00 | Tue, 13 Apr 2021 16:23:12 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:24:05 +00 | Tue, 13 Apr 2021 16:24:06 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:31:33 +00 | Tue, 13 Apr 2021 16:31:34 +00 |
+| service    | web1 --url          | minikube | asaadi | v1.19.0 | Tue, 13 Apr 2021 16:33:04 +00 | Tue, 13 Apr 2021 16:33:05 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 11:45:21 +00 | Wed, 14 Apr 2021 11:46:28 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 11:51:45 +00 | Wed, 14 Apr 2021 11:51:45 +00 |
+| service    | nginx --url         | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 11:53:52 +00 | Wed, 14 Apr 2021 11:53:53 +00 |
+| service    | nginx --url         | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 12:07:28 +00 | Wed, 14 Apr 2021 12:07:28 +00 |
+| service    | nginx --url         | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 13:20:40 +00 | Wed, 14 Apr 2021 13:20:41 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 15:50:18 +00 | Wed, 14 Apr 2021 15:51:32 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 15:55:14 +00 | Wed, 14 Apr 2021 15:55:14 +00 |
+| ip         |                     | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 15:59:51 +00 | Wed, 14 Apr 2021 15:59:51 +00 |
+| service    | nginx --url         | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 16:00:17 +00 | Wed, 14 Apr 2021 16:00:17 +00 |
+| service    | nginx --url         | minikube | asaadi | v1.19.0 | Wed, 14 Apr 2021 16:01:59 +00 | Wed, 14 Apr 2021 16:01:59 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Thu, 15 Apr 2021 12:21:20 +00 | Thu, 15 Apr 2021 12:22:29 +00 |
+| logs       |                     | minikube | asaadi | v1.19.0 | Thu, 15 Apr 2021 13:41:32 +00 | Thu, 15 Apr 2021 13:42:05 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Thu, 15 Apr 2021 13:46:32 +00 | Thu, 15 Apr 2021 13:47:49 +00 |
+| start      |                     | minikube | asaadi | v1.19.0 | Sun, 18 Apr 2021 12:43:04 +00 | Sun, 18 Apr 2021 12:44:13 +00 |
+| docker-env |                     | minikube | asaadi | v1.19.0 | Sun, 18 Apr 2021 12:44:39 +00 | Sun, 18 Apr 2021 12:44:40 +00 |
+|------------|---------------------|----------|--------|---------|-------------------------------|-------------------------------|
+
+
+==> Last Start <==
+Log file created at: 2021/04/18 12:43:04
+Running on machine: e2r5p3
+Binary: Built with gc go1.16.3 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0418 12:43:04.526788   80842 out.go:278] Setting OutFile to fd 1 ...
+I0418 12:43:04.530373   80842 out.go:330] isatty.IsTerminal(1) = true
+I0418 12:43:04.530377   80842 out.go:291] Setting ErrFile to fd 2...
+I0418 12:43:04.530384   80842 out.go:330] isatty.IsTerminal(2) = true
+I0418 12:43:04.530872   80842 root.go:317] Updating PATH: /Users/asaadi/.minikube/bin
+I0418 12:43:04.534176   80842 out.go:285] Setting JSON to false
+I0418 12:43:04.567185   80842 start.go:108] hostinfo: {"hostname":"e2r5p3.1337.ma","uptime":70467,"bootTime":1618679317,"procs":333,"os":"darwin","platform":"darwin","platformFamily":"Standalone Workstation","platformVersion":"10.14.6","kernelVersion":"18.7.0","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"33fbde00-1755-34de-af5b-2cad0de8f412"}
+W0418 12:43:04.567335   80842 start.go:116] gopshost.Virtualization returned error: not implemented yet
+I0418 12:43:04.581431   80842 out.go:157] 😄  minikube v1.19.0 on Darwin 10.14.6
+I0418 12:43:04.583669   80842 notify.go:126] Checking for updates...
+I0418 12:43:04.620789   80842 driver.go:322] Setting default libvirt URI to qemu:///system
+I0418 12:43:05.196819   80842 out.go:157] ✨  Using the virtualbox driver based on existing profile
+I0418 12:43:05.196846   80842 start.go:276] selected driver: virtualbox
+I0418 12:43:05.196853   80842 start.go:718] validating driver "virtualbox" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.19.0.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.20@sha256:0250dab3644403384bd54f566921c6b57138eecffbb861f9392feef9b2ec44f6 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.99.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.20.2 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.99.127 Port:8443 KubernetesVersion:v1.20.2 ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:true default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:false ingress-dns:false istio:false istio-provisioner:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: MultiNodeRequested:false}
+I0418 12:43:05.196983   80842 start.go:729] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc:}
+I0418 12:43:05.198254   80842 start_flags.go:270] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.19.0.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.20@sha256:0250dab3644403384bd54f566921c6b57138eecffbb861f9392feef9b2ec44f6 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.99.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.20.2 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.99.127 Port:8443 KubernetesVersion:v1.20.2 ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:true default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:false ingress-dns:false istio:false istio-provisioner:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: MultiNodeRequested:false}
+I0418 12:43:05.198712   80842 iso.go:120] acquiring lock: {Name:mk8b76388cabb914cae26287eb6f801c4f26cde0 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0418 12:43:05.384064   80842 out.go:157] 👍  Starting control plane node minikube in cluster minikube
+I0418 12:43:05.384583   80842 preload.go:97] Checking if preload exists for k8s version v1.20.2 and runtime docker
+I0418 12:43:05.384654   80842 preload.go:105] Found local preload: /Users/asaadi/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v10-v1.20.2-docker-overlay2-amd64.tar.lz4
+I0418 12:43:05.384666   80842 cache.go:54] Caching tarball of preloaded images
+I0418 12:43:05.385028   80842 preload.go:131] Found /Users/asaadi/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v10-v1.20.2-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0418 12:43:05.385033   80842 cache.go:57] Finished verifying existence of preloaded tar for  v1.20.2 on docker
+I0418 12:43:05.395379   80842 profile.go:148] Saving config to /Users/asaadi/.minikube/profiles/minikube/config.json ...
+I0418 12:43:05.400940   80842 cache.go:185] Successfully downloaded all kic artifacts
+I0418 12:43:05.415330   80842 start.go:313] acquiring machines lock for minikube: {Name:mk7f1c7d0106a7be0627454783a97b8b31b7f43b Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0418 12:43:05.415479   80842 start.go:317] acquired machines lock for "minikube" in 130.913µs
+I0418 12:43:05.415506   80842 start.go:93] Skipping create...Using existing machine configuration
+I0418 12:43:05.415516   80842 fix.go:55] fixHost starting: 
+I0418 12:43:05.415709   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:05.493179   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="aborted"
+VMStateChangeTime="2021-04-15T16:16:22.000000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+}
+I0418 12:43:05.493206   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.493270   80842 fix.go:108] recreateIfNeeded on minikube: state=Stopped err=<nil>
+W0418 12:43:05.493288   80842 fix.go:134] unexpected machine state, will restart: <nil>
+I0418 12:43:05.496469   80842 out.go:157] 🔄  Restarting existing virtualbox VM for "minikube" ...
+I0418 12:43:05.496526   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:05.566100   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="aborted"
+VMStateChangeTime="2021-04-15T16:16:22.000000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+}
+I0418 12:43:05.566125   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.566176   80842 main.go:126] libmachine: Check network to re-create if needed...
+I0418 12:43:05.566191   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage list hostonlyifs
+I0418 12:43:05.614789   80842 main.go:126] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.99.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+}
+I0418 12:43:05.614812   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.615066   80842 main.go:126] libmachine: Searching for hostonly interface for IPv4: 192.168.99.1 and Mask: ffffff00
+I0418 12:43:05.615071   80842 main.go:126] libmachine: Found: vboxnet0
+I0418 12:43:05.615081   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage list dhcpservers
+I0418 12:43:05.653768   80842 main.go:126] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-vboxnet0
+Dhcpd IP:       192.168.99.6
+LowerIPAddress: 192.168.99.100
+UpperIPAddress: 192.168.99.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0418 12:43:05.653795   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.653841   80842 main.go:126] libmachine: Removing orphan DHCP servers...
+I0418 12:43:05.653853   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage list hostonlyifs
+I0418 12:43:05.697557   80842 main.go:126] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.99.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+}
+I0418 12:43:05.697580   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.697658   80842 main.go:126] libmachine: Adding/Modifying DHCP server "192.168.99.6" with address range "192.168.99.100" - "192.168.99.254"...
+I0418 12:43:05.697682   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage list dhcpservers
+I0418 12:43:05.736119   80842 main.go:126] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-vboxnet0
+Dhcpd IP:       192.168.99.6
+LowerIPAddress: 192.168.99.100
+UpperIPAddress: 192.168.99.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0418 12:43:05.736144   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.736258   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage dhcpserver modify --netname HostInterfaceNetworking-vboxnet0 --ip 192.168.99.6 --netmask 255.255.255.0 --lowerip 192.168.99.100 --upperip 192.168.99.254 --enable
+I0418 12:43:05.780655   80842 main.go:126] libmachine: STDOUT:
+{
+}
+I0418 12:43:05.780684   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.780721   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage modifyvm minikube --nic2 hostonly --nictype2 virtio --nicpromisc2 deny --hostonlyadapter2 vboxnet0 --cableconnected2 on
+I0418 12:43:05.827256   80842 main.go:126] libmachine: STDOUT:
+{
+}
+I0418 12:43:05.827274   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.827395   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage modifyvm minikube --natpf1 delete ssh
+I0418 12:43:05.869585   80842 main.go:126] libmachine: STDOUT:
+{
+}
+I0418 12:43:05.869603   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.869633   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage modifyvm minikube --natpf1 ssh,tcp,127.0.0.1,51434,,22
+I0418 12:43:05.911393   80842 main.go:126] libmachine: STDOUT:
+{
+}
+I0418 12:43:05.911409   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:05.911431   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage startvm minikube --type headless
+I0418 12:43:06.625538   80842 main.go:126] libmachine: STDOUT:
+{
+Waiting for VM "minikube" to power on...
+VM "minikube" has been successfully started.
+}
+I0418 12:43:06.625555   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:06.625566   80842 main.go:126] libmachine: Checking vm logs: /Users/asaadi/.minikube/machines/minikube/minikube/Logs/VBox.log
+I0418 12:43:06.638099   80842 main.go:126] libmachine: Waiting for an IP...
+I0418 12:43:06.638127   80842 main.go:126] libmachine: Getting to WaitForSSH function...
+I0418 12:43:06.638600   80842 main.go:126] libmachine: Using SSH client type: native
+I0418 12:43:06.658082   80842 main.go:126] libmachine: &{{{<nil> 0 [] [] []} docker [0x43ff3c0] 0x43ff380 <nil>  [] 0s} 127.0.0.1 51434 <nil> <nil>}
+I0418 12:43:06.658089   80842 main.go:126] libmachine: About to run SSH command:
+exit 0
+I0418 12:43:37.354395   80842 main.go:126] libmachine: SSH cmd err, output: <nil>: 
+I0418 12:43:37.354410   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:37.467893   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1618749807700
+GuestAdditionsFacility_VirtualBox System Service=50,1618749808057
+GuestAdditionsFacility_Seamless Mode=0,1618749808663
+GuestAdditionsFacility_Graphics Mode=0,1618749807673
+}
+I0418 12:43:37.467913   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:37.468007   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:37.545214   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1618749807700
+GuestAdditionsFacility_VirtualBox System Service=50,1618749808057
+GuestAdditionsFacility_Seamless Mode=0,1618749808663
+GuestAdditionsFacility_Graphics Mode=0,1618749807673
+}
+I0418 12:43:37.545230   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:37.738756   80842 main.go:126] libmachine: Host-only MAC: 08002788473e
+
+I0418 12:43:37.739022   80842 main.go:126] libmachine: Using SSH client type: native
+I0418 12:43:37.739511   80842 main.go:126] libmachine: &{{{<nil> 0 [] [] []} docker [0x43ff3c0] 0x43ff380 <nil>  [] 0s} 127.0.0.1 51434 <nil> <nil>}
+I0418 12:43:37.739519   80842 main.go:126] libmachine: About to run SSH command:
+ip addr show
+I0418 12:43:37.830310   80842 main.go:126] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f3:7b:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86391sec preferred_lft 86391sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:88:47:3e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.99.127/24 brd 192.168.99.255 scope global dynamic eth1
+       valid_lft 591sec preferred_lft 591sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0418 12:43:37.830340   80842 main.go:126] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f3:7b:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86391sec preferred_lft 86391sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:88:47:3e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.99.127/24 brd 192.168.99.255 scope global dynamic eth1
+       valid_lft 591sec preferred_lft 591sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0418 12:43:37.830373   80842 main.go:126] libmachine: IP is 192.168.99.127
+I0418 12:43:37.830402   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:37.913560   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1618749807700
+GuestAdditionsFacility_VirtualBox System Service=50,1618749808057
+GuestAdditionsFacility_Seamless Mode=0,1618749808663
+GuestAdditionsFacility_Graphics Mode=0,1618749807673
+}
+I0418 12:43:37.913584   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:37.913675   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:37.992343   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1618749807700
+GuestAdditionsFacility_VirtualBox System Service=50,1618749808057
+GuestAdditionsFacility_Seamless Mode=0,1618749808663
+GuestAdditionsFacility_Graphics Mode=0,1618749807673
+}
+I0418 12:43:37.992379   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:37.992545   80842 main.go:126] libmachine: Host-only MAC: 08002788473e
+
+I0418 12:43:37.992598   80842 main.go:126] libmachine: Using SSH client type: native
+I0418 12:43:37.992738   80842 main.go:126] libmachine: &{{{<nil> 0 [] [] []} docker [0x43ff3c0] 0x43ff380 <nil>  [] 0s} 127.0.0.1 51434 <nil> <nil>}
+I0418 12:43:37.992742   80842 main.go:126] libmachine: About to run SSH command:
+ip addr show
+I0418 12:43:38.077908   80842 main.go:126] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f3:7b:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86390sec preferred_lft 86390sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:88:47:3e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.99.127/24 brd 192.168.99.255 scope global dynamic eth1
+       valid_lft 590sec preferred_lft 590sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0418 12:43:38.077951   80842 main.go:126] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f3:7b:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86390sec preferred_lft 86390sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:88:47:3e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.99.127/24 brd 192.168.99.255 scope global dynamic eth1
+       valid_lft 590sec preferred_lft 590sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0418 12:43:38.077979   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage list hostonlyifs
+I0418 12:43:38.129267   80842 main.go:126] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.99.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+}
+I0418 12:43:38.129299   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:38.129521   80842 main.go:126] libmachine: Found: vboxnet0
+I0418 12:43:38.139509   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:38.216239   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1618749807700
+GuestAdditionsFacility_VirtualBox System Service=50,1618749808057
+GuestAdditionsFacility_Seamless Mode=0,1618749808663
+GuestAdditionsFacility_Graphics Mode=0,1618749807673
+}
+I0418 12:43:38.216264   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:38.216336   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:38.293518   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1618749807700
+GuestAdditionsFacility_VirtualBox System Service=50,1618749808057
+GuestAdditionsFacility_Seamless Mode=0,1618749808663
+GuestAdditionsFacility_Graphics Mode=0,1618749807673
+}
+I0418 12:43:38.293536   80842 main.go:126] libmachine: STDERR:
+{
+}
+I0418 12:43:38.293685   80842 main.go:126] libmachine: Host-only MAC: 08002788473e
+
+I0418 12:43:38.293737   80842 main.go:126] libmachine: Using SSH client type: native
+I0418 12:43:38.293872   80842 main.go:126] libmachine: &{{{<nil> 0 [] [] []} docker [0x43ff3c0] 0x43ff380 <nil>  [] 0s} 127.0.0.1 51434 <nil> <nil>}
+I0418 12:43:38.293876   80842 main.go:126] libmachine: About to run SSH command:
+ip addr show
+I0418 12:43:38.381020   80842 main.go:126] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f3:7b:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86390sec preferred_lft 86390sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:88:47:3e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.99.127/24 brd 192.168.99.255 scope global dynamic eth1
+       valid_lft 590sec preferred_lft 590sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0418 12:43:38.381094   80842 main.go:126] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f3:7b:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86390sec preferred_lft 86390sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:88:47:3e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.99.127/24 brd 192.168.99.255 scope global dynamic eth1
+       valid_lft 590sec preferred_lft 590sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0418 12:43:38.381307   80842 profile.go:148] Saving config to /Users/asaadi/.minikube/profiles/minikube/config.json ...
+I0418 12:43:38.382360   80842 machine.go:88] provisioning docker machine ...
+I0418 12:43:38.396738   80842 buildroot.go:166] provisioning hostname "minikube"
+I0418 12:43:38.401532   80842 main.go:126] libmachine: Using SSH client type: native
+I0418 12:43:38.401758   80842 main.go:126] libmachine: &{{{<nil> 0 [] [] []} docker [0x43ff3c0] 0x43ff380 <nil>  [] 0s} 127.0.0.1 51434 <nil> <nil>}
+I0418 12:43:38.401764   80842 main.go:126] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0418 12:43:38.494877   80842 main.go:126] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0418 12:43:38.494938   80842 main.go:126] libmachine: Using SSH client type: native
+I0418 12:43:38.495159   80842 main.go:126] libmachine: &{{{<nil> 0 [] [] []} docker [0x43ff3c0] 0x43ff380 <nil>  [] 0s} 127.0.0.1 51434 <nil> <nil>}
+I0418 12:43:38.495169   80842 main.go:126] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0418 12:43:38.581165   80842 main.go:126] libmachine: SSH cmd err, output: <nil>: 
+I0418 12:43:38.581954   80842 buildroot.go:172] set auth options {CertDir:/Users/asaadi/.minikube CaCertPath:/Users/asaadi/.minikube/certs/ca.pem CaPrivateKeyPath:/Users/asaadi/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/Users/asaadi/.minikube/machines/server.pem ServerKeyPath:/Users/asaadi/.minikube/machines/server-key.pem ClientKeyPath:/Users/asaadi/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/Users/asaadi/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/Users/asaadi/.minikube}
+I0418 12:43:38.581994   80842 buildroot.go:174] setting up certificates
+I0418 12:43:38.592444   80842 provision.go:83] configureAuth start
+I0418 12:43:38.593747   80842 main.go:126] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0418 12:43:38.669793   80842 main.go:126] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="29ba351c-156a-439a-8394-ed6bf7244856"
+CfgFile="/Users/asaadi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/asaadi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="29ba351c-156a-439a-8394-ed6bf7244856"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2021-04-18T12:43:06.610000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/asaadi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b0f4c3fc-99a1-4a5d-89f5-10b1639ddf30"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/asaadi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="da45340c-fc32-42f9-b688-84f0fe1d1c16"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027F37B31"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,51434,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="08002788473E"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"

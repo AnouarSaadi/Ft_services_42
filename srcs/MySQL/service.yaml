@@ -6,10 +6,10 @@ metadata:
   name: mysql
 spec:
   ports:
-    - name: http
+    - name: mysql
       port: 3306
       protocol: TCP
       targetPort: 3306
   selector:
     app: mysql
-  type: LoadBalancer
+  type: ClusterIP

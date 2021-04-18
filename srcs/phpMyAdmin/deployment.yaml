@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: phpMyadmin
-  name: phpMyadmin
+    app: phpmyadmin
+  name: phpmyadmin
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: phpMyadmin
+      app: phpmyadmin
   template:
     metadata:
       labels:
-        app: phpMyadmin
+        app: phpmyadmin
     spec:
       containers:
-      - image: phpMyadmin
-        name: phpMyadmin
+      - image: phpmyadmin
+        name: phpmyadmin
         imagePullPolicy: Never
         ports:
           - containerPort: 5000

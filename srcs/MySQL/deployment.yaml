@@ -14,8 +14,10 @@ spec:
       labels:
         app: mysql
     spec:
+      restartPolicy: Always
       containers:
       - image: mysql
         name: mysql
         imagePullPolicy: Never
-        - containterPort: 3306
+        ports:
+          - containerPort: 3306

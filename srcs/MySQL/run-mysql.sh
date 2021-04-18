@@ -2,5 +2,5 @@
 
 openrc
 touch /run/openrc/softlevel
-service mariadb restart
-sh
+service mariadb start
+mysqld_safe
