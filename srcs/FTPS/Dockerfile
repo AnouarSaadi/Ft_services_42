@@ -1,5 +1,11 @@
-FROM    alpine:latest
+FROM    alpine:3.12
 
 
 RUN     apk update
-RUN     apk add vsftpd
+    #FTP Server
+RUN     apk add vsftpd 
+RUN     apk add openrc
+
+RUN     mkdir /srv/ftp
+
+RUN     adduser 

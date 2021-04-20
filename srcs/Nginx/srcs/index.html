@@ -3,11 +3,10 @@
 
 <head>
     <title>Ft_services_42</title>
-    <link
-        href="https://i.imgur.com/FSR1xNa.png" rel="icon" type="image/png" />
+    <link href="https://i.imgur.com/FSR1xNa.png" rel="icon" type="image/png" />
     <style>
         body {
-            background-image: url(https://i.imgur.com/9rGtibq.png);
+            background-image: url(https://i.imgur.com/gvKPPZY.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0px;
@@ -21,16 +20,15 @@
             position: relative;
             height: 600px;
         }
-
         .text {
             position: relative;
         }
         .text h1 {
             position: absolute;
             width: 142px;
-            height: 53px;  
+            height: 53px;
             font-family: Cookie;
-            font-style:italic;
+            font-style: italic;
             font-weight: normal;
             font-size: 60px;
             line-height: 100px;
@@ -38,13 +36,14 @@
             color: #000000;
         }
         .fil {
-            position: relative;
+            float : right;
         }
         .fil img {
             width: 150px;
-            position: absolute;
             right: 0px;
             top: 0px;
+            float: right;
+
         }
         .k8s {
             position: relative;
@@ -52,8 +51,8 @@
         .k8s img {
             position: absolute;
             width: 150px;
-            top: 0px;
-            left: 0px;            
+            top: 500px;
+            left: 10px;
         }
         .docker {
             position: relative;
@@ -66,61 +65,82 @@
 
         }
         div.nginx img {
-            width: 140px;
+            width: 180px;
             top: 25%;
-            left: 45%;
+            left: 55%;
             position: absolute;
 
         }
         div.metalLB img {
             position: absolute;
             width: 100px;
-            top: 5%;
+            top: 35%;
             left: 45%;
         }
-        div.phpmyadmin img {
+        div.grafana img {
             position: absolute;
-            width: 140px;
-            top: 32%;
-            left: 30%;
+            width: 135px;
+            top: 40%;
+            left: 20%;
         }
         div.wordpress img {
             position: absolute;
             width: 90px;
             top: 15%;
-            left: 10%;
+            left: 70%;
         }
-        div.grafana img {
+        div.phpmyadmin img {
             position: absolute;
-            width: 100px;
-            top: 35%;
+            width: 160px;
+            top: 40%;
             left: 70%;
         }
         div.ftps img {
             position: absolute;
             width: 140px;
-            top: 20%;
-            right: 59%;
+            top: 61%;
+            right: 30%;
         }
         div.influxdb img {
             position: absolute;
-            top : 19%;
-            left: 65%;
+            top: 30%;
             width: 250px;
         }
         div.mysql img {
             position: absolute;
-            top :22%;
+            top: 18%;
+            left: 3%;
             width: 170px;
+        }
+        .text {
+            margin-top: 60px;
+            /* border: 1px solid red; */
+            width : 800px; 
+        }
+        .text a {
+            font-family: Comic Sans MS;
+            font-size: 60px;
+            margin: 200px;
+            padding-top: 500px;
+            text-decoration: none;
+            color: #15317E;
+        }
+        img:hover {
+            transform: scale(1.5);
         }
     </style>
 </head>
 
 <body>
-    <div class="docker_k8s">
-        <div class="fil">
+    <div style="margin : 0px; padding : 0px; width : 100vw; display: inline-block;">
+        <div class="fil" style="width: 40%">
             <a href="https://1337.ma/"><img src="https://i.imgur.com/128XXVM.jpg" title="1337" /></a>
         </div>
+        <div class="text" style="width: 60%">
+            <a href="https://github.com/a-saadi/Ft_services_42/">FT_SERVICES</a>
+        </div>
+    </div>
+    <div class="docker_k8s">
         <div class="docker">
             <a href="https://www.docker.com/"><img src="https://i.imgur.com/A2ZWHEh.png" title="Docker" /></a>
         </div>
@@ -131,13 +151,13 @@
     <div class="metalLB">
         <a href="https://metallb.universe.tf/"><img src="https://i.imgur.com/e0My6QZ.png" title="metalLB" /></a>
     </div>
-        <div class="titira">
-            <div class="grafana">
-                <a href="https://grafana.com/"><img src="https://i.imgur.com/cTWCtbd.png" title="Grafana" /></a>
-            </div>
-            <div class="wordpress">
-                <a href="https://wordpress.com/"><img src="https://i.imgur.com/fBeFckX.png" title="WordPress" /></a>
-            </div>
+    <div class="titira">
+        <div class="grafana">
+            <a href="https://grafana.com/"><img src="https://i.imgur.com/cTWCtbd.png" title="Grafana" /></a>
+        </div>
+        <div class="wordpress">
+            <a href="https://wordpress.com/"><img src="https://i.imgur.com/fBeFckX.png" title="WordPress" /></a>
+        </div>
         <div class="nginx">
             <a href="https://www.nginx.com/"><img src="https://i.imgur.com/8yMqt0g.png" title="Nginx" /></a>
         </div>
@@ -155,4 +175,5 @@
         </div>
     </div>
 </body>
+
 </html>

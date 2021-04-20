@@ -5,28 +5,31 @@
 # eval $(minikube docker-env)
 
 # MetalLB Installation & Config.
-# kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/namespace.yaml
-# kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/metallb.yaml
-# kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
+    kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/namespace.yaml
+    kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.6/manifests/metallb.yaml
+    kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
+    kubectl apply -f srcs/MetalLB/ConfigMap.yaml
 
-kubectl create -f srcs/MetalLB/ConfigMap.yaml
+my_arr=( nginx phpmyadmin mysql wordpress )
 
 # Images building
-docker build -t nginx srcs/nginx
-docker build -t phpmyadmin srcs/phpMyAdmin
-docker build -t mysql srcs/MySQL
-docker build -t wordpress srcs/WordPress
+a="build"
+if [ $1 == $a ]; then
+    for i in "${my_arr[@]}";
+        do docker build -t $i srcs/$i;
+    done;
+fi;
 
-# Create Deployemnts
+# Create Deployemnts & Services
+b="apply"
+if [ $1 == $b ]; then
+    for i in "${my_arr[@]}";
+        do kubectl apply -f ./srcs/$i/;
+    done;
+fi;
 
-kubectl apply -f srcs/nginx/deployment.yaml
-kubectl apply -f srcs/phpMyadmin/deployment.yaml
-kubectl apply -f srcs/MySQL/deployment.yaml
-kubectl apply -f srcs/WordPress/deployment.yaml
-
-# Create Services
-
-kubectl apply -f srcs/nginx/service.yaml
-kubectl apply -f srcs/phpMyAdmin/service.yaml
-kubectl apply -f srcs/MySQL/service.yaml
-kubectl apply -f srcs/WordPress/service.yaml
+# Removin' all Deployments & Services
+c="rm"
+if [ $1 == $c ]; then 
+    for i in "${my_arr[@]}"; do kubectl delete -f ./srcs/$i/; done;
+fi;

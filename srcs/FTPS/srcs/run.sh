@@ -1,5 +1,4 @@
 #!/bin/sh
-openrc
+
+openrc 2> /dev/null || true
 touch /run/openrc/softlevel
-service nginx start
-sh

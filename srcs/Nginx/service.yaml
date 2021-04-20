@@ -4,6 +4,8 @@ metadata:
   labels:
     app: nginx
   name: nginx
+  annotations:
+    metallb.universe.tf/allow-shared-ip: shared 
 spec:
   ports:
     - name: http
