@@ -31,7 +31,14 @@ if [ $1 == $C ]; then
 fi;
 
 # Removin' all Deployments & Services
+<<<<<<< HEAD
 D="rm"
 if [ $1 == $D ]; then 
     for i in "${svc_arr[@]}"; do kubectl delete -f ./srcs/$i/; done;
 fi;
+=======
+c="rm"
+if [ $1 == $c ]; then 
+    for i in "${my_arr[@]}"; do kubectl delete -f ./srcs/$i/; done;
+fi;
+>>>>>>> fb0a17c430223423ecc4b2fa8a835920996b8a64
