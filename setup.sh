@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 # Set up the cluster & MetalLB Installation & Config.
 A="setup"
 if [ $1 == $A ]; then
