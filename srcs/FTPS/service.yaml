@@ -8,10 +8,14 @@ metadata:
     metallb.universe.tf/allow-shared-ip: shared 
 spec:
   ports:
-    - name: ftps
+    - name: ftps00
       port: 21
       protocol: TCP
       targetPort: 21
+    - name: psvmode
+      port: 21000
+      protocol: TCP
+      targetPort: 21000
   selector:
     app: ftps
   type: LoadBalancer

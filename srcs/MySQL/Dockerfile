@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 RUN     apk update
 RUN     apk add mysql mysql-client
-RUN     apk add openrc 2> /dev/null || true ; openrc ; touch /run/openrc/softlevel
+RUN     apk add openrc ; openrc 2> /dev/null || true ; touch /run/openrc/softlevel
 RUN     /etc/init.d/mariadb setup 2> /dev/null || true
 
 # phpmyadmin database creating

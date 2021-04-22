@@ -4,7 +4,6 @@ FROM    alpine:3.12
 RUN     apk update
     #FTP Server
 RUN     apk add vsftpd 
-RUN     apk add openrc
 
     # Getting vsftpd config
 COPY    srcs/vsftpd.conf /etc/vsftpd/

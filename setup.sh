@@ -17,21 +17,35 @@ svc_arr=( nginx phpmyadmin mysql wordpress ftps)
 # Images building
 B="build"
 if [ $1 == $B ]; then
-    for i in "${svc_arr[@]}";
-        do docker build -t $i srcs/$i;
-    done;
+    if  [ $2 ]; then
+        docker build -t $2 srcs/$2;
+    else
+        for i in "${svc_arr[@]}";
+            do docker build -t $i srcs/$i;
+        done;
+    fi;
 fi;
 
-# Create Deployemnts & Services
+# Create Deployemnt & Service
 C="apply"
 if [ $1 == $C ]; then
-    for i in "${svc_arr[@]}";
-        do kubectl apply -f ./srcs/$i/;
-    done;
+    if [ $2 ]; then
+        kubectl apply -f ./srcs/$2/;
+    else
+        for i in "${svc_arr[@]}";
+            do kubectl apply -f ./srcs/$i/;
+        done;
+    fi;
 fi;
 
-# Removin' all Deployments & Services
+# Removin' Deployment & Service
 D="rm"
-if [ $1 == $D ]; then 
-    for i in "${svc_arr[@]}"; do kubectl delete -f ./srcs/$i/; done;
+if [ $1 == $D ]; then
+    if [ $2 ]; then
+        kubectl delete -f ./srcs/$2/;
+    else
+        for i in "${svc_arr[@]}";
+            do kubectl delete -f ./srcs/$i/;
+        done;
+    fi
 fi;
