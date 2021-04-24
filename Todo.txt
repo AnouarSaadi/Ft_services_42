@@ -62,3 +62,11 @@ Kubernetes{
         *Continuity and fault tolerance
 
 }
+
+Nginx: done
+Phpmyadmin: done
+wordpress: done
+mysql: done
+ftps: done
+influxdb: done
+Grafana: done
