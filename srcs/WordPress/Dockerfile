@@ -1,4 +1,5 @@
 FROM    alpine:3.12
+LABEL   Author "asaadi <asaadi@student.1337.ma>"
 
 RUN     apk update
 RUN     apk add nginx
@@ -20,5 +21,7 @@ COPY    srcs/wp-config.php /usr/share/webapps/wordpress/
 RUN     ln -s /usr/share/webapps/wordpress/ /var/www/localhost/htdocs/wordpress
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
+
+EXPOSE  5050
 
 ENTRYPOINT ["/bin/sh", "-c", "/run.sh"]

@@ -1,13 +1,12 @@
-FROM    alpine:3.12
+FROM        alpine:3.12
+LABEL       Author "asaadi <asaadi@student.1337.ma>"
 
-RUN     apk update
+RUN         apk update
+RUN         apk add influxdb
+COPY        srcs/influxdb.conf /etc/
+COPY        srcs/run.sh /
+RUN         chmod +x /run.sh
 
-RUN     apk add influxdb
+EXPOSE      8086
 
-RUN     apk add curl wget gnupg
-RUN     curl -s https://repos.influxdata.com/influxdb.key | gpg --import
-RUN     wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.5_linux_amd64.tar.gz.asc
-RUN     wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.5_linux_amd64.tar.gz
-RUN     influxd -config /etc/influxdb.conf
-ENV     INFLUXDB_CONFIG_PATH=/etc/influxdb.conf
-RUN     influxd
+ENTRYPOINT  [ "/bin/sh", "-c", "/run.sh" ]

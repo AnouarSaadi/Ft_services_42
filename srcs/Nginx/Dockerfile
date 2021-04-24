@@ -1,5 +1,6 @@
 # Base Image
 FROM    alpine:3.12
+LABEL   Author "asaadi <asaadi@student.1337.ma>"
 
 #Installation
     # Updating APK Packages
@@ -33,4 +34,8 @@ FROM    alpine:3.12
             openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key \
             -out /etc/ssl/certs/nginx-selfsigned.crt 2> /dev/null || true
     
+    # specifying network ports at runtime
+    EXPOSE  80
+    EXPOSE  443
+
     ENTRYPOINT ["/bin/sh", "-c", "/run.sh"]

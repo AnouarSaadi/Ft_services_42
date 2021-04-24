@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Author "asaadi <asaadi@student.1337.ma>"
+
 # Set up the cluster & MetalLB Installation & Config.
 A="setup"
 if [ $1 == $A ]; then
@@ -11,7 +13,7 @@ if [ $1 == $A ]; then
     kubectl apply -f srcs/MetalLB/ConfigMap.yaml
 fi;
 
-svc_arr=( nginx phpmyadmin mysql wordpress ftps)
+svc_arr=( nginx phpmyadmin mysql wordpress ftps )
 
 # Images building
 B="build"
@@ -38,7 +40,7 @@ if [ $1 == $C ]; then
 fi;
 
 # Removin' Deployment & Service
-D="rm"
+D="delete"
 if [ $1 == $D ]; then
     if [ $2 ]; then
         kubectl delete -f ./srcs/$2/;

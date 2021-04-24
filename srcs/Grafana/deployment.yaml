@@ -2,22 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: ftps
-  name: ftps
+    app: grafana
+  name: grafana
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ftps
+      app: grafana
   template:
     metadata:
       labels:
-        app: ftps
+        app: grafana
     spec:
       containers:
-      - image: ftps
-        name: ftps
+      - image: grafana
+        name: grafana
         imagePullPolicy: Never
         ports:
-          - containerPort: 21
-          - containerPort: 21000
+          - containerPort: 3000
