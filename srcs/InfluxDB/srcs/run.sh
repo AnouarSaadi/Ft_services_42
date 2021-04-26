@@ -2,4 +2,4 @@
 
 influxd -config /etc/influxdb.conf
 
-sh
+# sh
