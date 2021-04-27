@@ -24,4 +24,4 @@ RUN     chmod +x /run.sh
 
 EXPOSE  5050
 
-ENTRYPOINT ["/bin/sh", "-c", "/run.sh"]
+ENTRYPOINT [ "/run.sh" ]

@@ -9,4 +9,4 @@ RUN         chmod +x /run.sh
 
 EXPOSE      8086
 
-ENTRYPOINT  [ "/bin/sh", "-c", "/run.sh" ]
+ENTRYPOINT  [ "/run.sh" ]

@@ -25,4 +25,4 @@ RUN     chmod +x /run.sh
 
 EXPOSE  3306
 
-ENTRYPOINT [ "/bin/sh", "-c", "/run.sh"]
+ENTRYPOINT [ "/run.sh" ]

@@ -13,4 +13,4 @@ COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 EXPOSE  3000
 
-ENTRYPOINT      [ "/bin/sh", "-c" , "/run.sh" ]
+ENTRYPOINT      [ "/run.sh" ]

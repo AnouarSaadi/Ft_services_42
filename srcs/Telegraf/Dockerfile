@@ -10,9 +10,8 @@ COPY    srcs/telegraf.conf /etc/
 
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
-RUN     apk add openrc
 
 ENTRYPOINT [ "/run.sh" ]
 
-CMD [ "sh" ]
+# CMD [ "sh" ]
 # EXPOSE  8094 TCP

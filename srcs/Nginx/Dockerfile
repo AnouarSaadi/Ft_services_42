@@ -38,4 +38,4 @@ LABEL   Author "asaadi <asaadi@student.1337.ma>"
     EXPOSE  80
     EXPOSE  443
 
-    ENTRYPOINT ["/bin/sh", "-c", "/run.sh"]
+    ENTRYPOINT [ "/run.sh" ]

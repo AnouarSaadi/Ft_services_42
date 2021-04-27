@@ -18,4 +18,4 @@ RUN     printf 'MA\nKHOURIBGA\nKHOURIBGA\n1337FIL\n1337Ltd\nAnouar SAADI\nasaadi
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 
-ENTRYPOINT [ "/bin/sh", "-c","/run.sh" ]
+ENTRYPOINT [ "/run.sh" ]
