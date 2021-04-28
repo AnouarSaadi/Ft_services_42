@@ -19,6 +19,11 @@ RUN     chown -R 777 /usr/share/webapps
 RUN     rm /usr/share/webapps/wordpress/wp-config-sample.php
 COPY    srcs/wp-config.php /usr/share/webapps/wordpress/
 RUN     ln -s /usr/share/webapps/wordpress/ /var/www/localhost/htdocs/wordpress
+
+RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
+        apk add telegraf
+COPY    srcs/telgraf.conf /etc/
+
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 

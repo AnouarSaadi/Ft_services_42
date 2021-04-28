@@ -22,10 +22,6 @@ LABEL   Author "asaadi <asaadi@student.1337.ma>"
     RUN     rm /etc/nginx/nginx.conf
     COPY    srcs/nginx.conf /etc/nginx/
     COPY    srcs/index.html /www/html/
-#     #
-    RUN     mkdir /run/nginx
-	COPY	srcs/run.sh /
-	RUN		chmod +x /run.sh
 
 # Configuration ssl
     RUN     apk add openssl
@@ -34,7 +30,17 @@ LABEL   Author "asaadi <asaadi@student.1337.ma>"
             openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key \
             -out /etc/ssl/certs/nginx-selfsigned.crt 2> /dev/null || true
     
-    # specifying network ports at runtime
+    # Telegraf
+    RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+    RUN     apk add telegraf
+    COPY    srcs/telegraf.conf /etc/
+
+    # Script that will execute in container at runtime.
+    RUN     mkdir /run/nginx
+	COPY	srcs/run.sh /
+	RUN		chmod +x /run.sh
+
+    # Specifying network ports at runtime
     EXPOSE  80
     EXPOSE  443
 

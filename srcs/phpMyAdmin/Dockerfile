@@ -20,6 +20,10 @@ COPY    srcs/config.inc.php /usr/share/webapps/phpmyadmin
 RUN     chmod 644 /usr/share/webapps/phpmyadmin/config.inc.php
 RUN     ln -s /usr/share/webapps/phpmyadmin/ /var/www/localhost/htdocs/phpmyadmin
 
+RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
+        apk add telegraf
+COPY    srcs/telgraf.conf /etc/
+
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 

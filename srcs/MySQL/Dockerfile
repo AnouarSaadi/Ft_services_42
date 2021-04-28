@@ -20,6 +20,11 @@ RUN     service mariadb restart 2> /dev/null || true; \
         mysql -u root -e "FLUSH PRIVILEGES";
 
 COPY    srcs/mariadb-server.cnf /etc/my.cnf.d/
+
+RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
+        apk add telegraf
+COPY    srcs/telgraf.conf /etc/
+
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 

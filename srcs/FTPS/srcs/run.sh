@@ -10,3 +10,5 @@ echo "$USER:$PASS" | chpasswd
 chown $USER:$USER /home/$USER/ -R
 
 vsftpd /etc/vsftpd/vsftpd.conf
+
+telegraf -config /etc/telegraf.conf

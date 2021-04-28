@@ -15,6 +15,10 @@ RUN     printf 'MA\nKHOURIBGA\nKHOURIBGA\n1337FIL\n1337Ltd\nAnouar SAADI\nasaadi
         openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.key \
         -out /etc/ssl/certs/vsftpd.crt 2> /dev/null || true
 
+RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
+        apk add telegraf
+COPY    srcs/telgraf.conf /etc/
+
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 

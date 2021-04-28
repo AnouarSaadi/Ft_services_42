@@ -2,4 +2,4 @@
 
 grafana-server -homepath $GRAFANA_HOME
 
-# sh
+telegraf -config /etc/telegraf.conf

@@ -2,4 +2,4 @@
 
 influxd -config /etc/influxdb.conf
 
-# sh
+telegraf -config /etc/telegraf.conf

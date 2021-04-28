@@ -9,6 +9,10 @@ ENV     GRAFANA_HOME=/usr/share/grafana
 RUN     mkdir -p $GRAFANA_HOME/plugins $GRAFANA_HOME/data $GRAFANA_HOME/logs $GRAFANA_HOME/dashboards &&\
         grafana-cli plugins update-all &&\
         chown -R grafana:grafana $GRAFANA_HOME
+        
+RUN     apk add telegraf
+COPY    srcs/telgraf.conf /etc/
+
 COPY    srcs/run.sh /
 RUN     chmod +x /run.sh
 EXPOSE  3000
