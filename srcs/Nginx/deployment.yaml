@@ -21,3 +21,9 @@ spec:
         ports:
           - containerPort: 80
           - containerPort: 443
+        livenessProbe:
+          exec:
+            command:
+              - ./restart.sh
+          initialDelaySeconds: 2
+          periodSeconds: 2

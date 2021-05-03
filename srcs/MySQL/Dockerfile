@@ -5,6 +5,7 @@ RUN     apk update
 RUN     apk add mysql mysql-client
 RUN     apk add openrc ; openrc 2> /dev/null || true ; touch /run/openrc/softlevel
 RUN     /etc/init.d/mariadb setup 2> /dev/null || true
+COPY    srcs/wordpress.sql /
 
 # phpmyadmin database creating
 RUN     service mariadb start 2> /dev/null || true; \
@@ -23,10 +24,10 @@ COPY    srcs/mariadb-server.cnf /etc/my.cnf.d/
 
 RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
         apk add telegraf
-COPY    srcs/telgraf.conf /etc/
+COPY    srcs/telegraf.conf /etc/
 
-COPY    srcs/run.sh /
-RUN     chmod +x /run.sh
+COPY    srcs/*.sh /
+RUN     chmod +x /*.sh
 
 EXPOSE  3306
 

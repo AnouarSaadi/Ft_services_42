@@ -20,3 +20,9 @@ spec:
         imagePullPolicy: Never
         ports:
           - containerPort: 5050
+        livenessProbe:
+          exec:
+            command:
+              - ./restart.sh
+          initialDelaySeconds: 2
+          periodSeconds: 2

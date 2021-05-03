@@ -21,3 +21,16 @@ spec:
         imagePullPolicy: Never
         ports:
           - containerPort: 3306
+        volumeMounts:
+          - name: pv-mysql
+            mountPath: /var/lib/mysql
+        livenessProbe:
+          exec:
+            command:
+              - ./restart.sh
+          initialDelaySeconds: 2
+          periodSeconds: 2
+      volumes:
+        - name: pvc-mysql
+          persistentVolumeClaim:
+            claimName: pvc-mysql

@@ -37,8 +37,8 @@ LABEL   Author "asaadi <asaadi@student.1337.ma>"
 
     # Script that will execute in container at runtime.
     RUN     mkdir /run/nginx
-	COPY	srcs/run.sh /
-	RUN		chmod +x /run.sh
+	COPY	srcs/*.sh /
+	RUN		chmod +x /*.sh
 
     # Specifying network ports at runtime
     EXPOSE  80

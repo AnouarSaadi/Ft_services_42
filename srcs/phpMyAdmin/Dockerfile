@@ -22,10 +22,10 @@ RUN     ln -s /usr/share/webapps/phpmyadmin/ /var/www/localhost/htdocs/phpmyadmi
 
 RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
         apk add telegraf
-COPY    srcs/telgraf.conf /etc/
+COPY    srcs/telegraf.conf /etc/
 
-COPY    srcs/run.sh /
-RUN     chmod +x /run.sh
+COPY    srcs/*.sh /
+RUN     chmod +x /*.sh
 
 EXPOSE  5000
 

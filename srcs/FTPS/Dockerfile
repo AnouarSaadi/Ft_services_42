@@ -17,9 +17,9 @@ RUN     printf 'MA\nKHOURIBGA\nKHOURIBGA\n1337FIL\n1337Ltd\nAnouar SAADI\nasaadi
 
 RUN     echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
         apk add telegraf
-COPY    srcs/telgraf.conf /etc/
+COPY    srcs/telegraf.conf /etc/
 
-COPY    srcs/run.sh /
-RUN     chmod +x /run.sh
+COPY    srcs/*.sh /
+RUN     chmod +x /*.sh
 
 ENTRYPOINT [ "/run.sh" ]
