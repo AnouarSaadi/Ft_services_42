@@ -3,7 +3,6 @@ LABEL       Author "asaadi <asaadi@student.1337.ma>"
 
 RUN         apk update
 RUN         apk add influxdb
-# COPY        srcs/influxdb.conf /etc/
 
 RUN         echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
             apk add telegraf

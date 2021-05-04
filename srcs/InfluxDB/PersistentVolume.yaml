@@ -8,6 +8,7 @@ spec:
     capacity:
         storage: 1Gi
     accessModes:
-        - ReadWriteMany
+        - ReadWriteOnce
+    persistentVolumeReclaimPolicy: Retain
     hostPath:
-        path: /var/lib/influxdb
+        path: /mnt/base/influxdb

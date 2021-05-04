@@ -21,7 +21,7 @@ spec:
         ports:
           - containerPort: 8086
         volumeMounts:
-          - name: pv-influxdb
+          - name: storage-persistent-influxdb
             mountPath: /var/lib/influxdb
         livenessProbe:
           exec:
@@ -30,6 +30,6 @@ spec:
           initialDelaySeconds: 2
           periodSeconds: 2
       volumes:
-        - name: pvc-influxdb
+        - name: storage-persistent-influxdb
           persistentVolumeClaim:
             claimName: pvc-influxdb

@@ -18,6 +18,6 @@ if pgrep nginx >/dev/null 2>&1;
 then
     echo "nginx is up...";
 else
-    echo "nginx is down!\nExit";
+    echo "nginx is down!";
     exit 1;
 fi

@@ -22,7 +22,7 @@ spec:
         ports:
           - containerPort: 3306
         volumeMounts:
-          - name: pv-mysql
+          - name: storage-persistent-mysql
             mountPath: /var/lib/mysql
         livenessProbe:
           exec:
@@ -31,6 +31,6 @@ spec:
           initialDelaySeconds: 2
           periodSeconds: 2
       volumes:
-        - name: pvc-mysql
+        - name: storage-persistent-mysql
           persistentVolumeClaim:
             claimName: pvc-mysql
