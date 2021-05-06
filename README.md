@@ -4,5 +4,5 @@
 #### Ft_services is about clustering management and deployment with Kubernetes. Also, the virtualization of a network and do "clustering".
 
 <p align="center"> 
-  <img src="https://imgur.com/DirUKzS" width="100%" />
+  <img src="https://i.imgur.com/DirUKzS.png" width="100%" />
 </p>
