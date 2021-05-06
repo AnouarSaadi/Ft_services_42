@@ -9,9 +9,7 @@
 
 ### [TODO](#TODO)
 
-
-
-
+The project consists of setting up an infrastructure of different services with The [kubernetes](https://kubernetes.io).
 
 <p align="center"> 
   <img src="https://i.imgur.com/CG0YhWf.png" width="100%" />
