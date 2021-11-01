@@ -13,7 +13,7 @@ openrc 2> /dev/null || true ; touch /run/openrc/softlevel; \
 service mariadb start 2> /dev/null || true
 
 # Add WordPress database table
-mysql -u root -e "USE wordpress; SOURCE /wordpress.sql;"
+mysql -u root -proot -e "USE wordpress; SOURCE /wordpress.sql;"
 
 # Run telegraf in background
 telegraf -config /etc/telegraf.conf
