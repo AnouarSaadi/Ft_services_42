@@ -24,10 +24,6 @@
   - [FTPS](https://en.wikipedia.org/wiki/FTPS#:~:text=FTPS%20(also%20known%20FTP%2DSSL,prohibited%20by%20RFC7568)%20cryptographic%20protocols.).
   - [Grafana](https://grafana.com/) platform of monitoring the containers.
 
-<p align="center"> 
-  <img src="https://i.imgur.com/CG0YhWf.png" width="100%" />
-</p>
-
 ### how to launch ?
 
 > After cloning the project, run the script ```setup.sh```, this script will setup all the applicaons.
